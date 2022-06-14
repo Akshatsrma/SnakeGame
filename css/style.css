@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
 *{
     padding:0;
     margin:0;
@@ -10,6 +13,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#score{
+    position:absolute;
+    top:9px;
+    right:0.8vw;
+    font-size:39px;
+    font-weight: bold;
+    font-family: 'Spicy Rice', cursive;
+    color: aliceblue;
+}
+
+#highscore{
+    position:absolute;
+    top:9px;
+    left:0.2vw;
+    font-size:39px;
+    font-weight: bold;
+    font-family: 'Spicy Rice', cursive;
+    color: aliceblue;
 }
 
 #board{
@@ -25,13 +48,17 @@
 
 .head{
     background-color: black ;
+    border: .25vmin solid rgb(151, 150, 150);
+    border-radius: 15px;
 }
 
 .snake{
        background-color: rgb(122, 119, 119);
        border: .25vmin solid white;
+       border-radius:12px;
 }
 
 .food{
-    background-color: rgb(47, 47, 194);
+    background: linear-gradient(rgb(10, 134, 206),rgb(1, 132, 255));
+    border: .25vmin solid black;
 }
